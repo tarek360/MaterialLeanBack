@@ -81,10 +81,10 @@ public class MainActivity extends AppCompatActivity {
                 Picasso.with(viewHolder.imageView.getContext()).load(url).into(viewHolder.imageView);
             }
 
-            //@Override
-            //public String getTitleForRow(int row) {
-            //    return "Line " + row;
-            //}
+            @Override
+            public String getTitleForRow(int row) {
+                return "Line " + row;
+            }
 
             //region customView
             @Override

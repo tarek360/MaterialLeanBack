@@ -4,37 +4,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:elevation="10dp"/>
+
+    <com.github.florent37.materialleanback.MaterialLeanBack
+        android:id="@+id/materialLeanBack"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        app:mlb_animateCards="false"
+        app:mlb_lineSpacing="0dp"
+        app:mlb_overlapCards="true"
+        app:mlb_paddingBottom="0dp"
+        app:mlb_paddingLeft="0dp"
+        app:mlb_paddingRight="0dp"
+        app:mlb_paddingTop="0dp"
+        app:mlb_titleColor="@android:color/white"
+        app:mlb_titleBackGroundColor="#22aa55"
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/primary"
-            android:elevation="10dp" />
+    />
 
-        <com.github.florent37.materialleanback.MaterialLeanBack
-            android:id="@+id/materialLeanBack"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+  </LinearLayout>
 
-            app:mlb_animateCards="false"
-            app:mlb_background="@color/background"
-            app:mlb_lineSpacing="0dp"
-            app:mlb_overlapCards="true"
-            app:mlb_paddingBottom="0dp"
-            app:mlb_paddingLeft="0dp"
-            app:mlb_paddingRight="0dp"
-            app:mlb_paddingTop="0dp"
-
-            app:mlb_titleColor="@android:color/white" />
-
-    </LinearLayout>
-
-    <include layout="@layout/drawer" />
+  <include layout="@layout/drawer"/>
 
 </android.support.v4.widget.DrawerLayout>
 

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="MaterialLeanBack">
+        <attr name="mlb_titleGravity" format="integer"/>
         <attr name="mlb_titleColor" format="color"/>
+        <attr name="mlb_titleBackGroundColor" format="color"/>
         <attr name="mlb_titleSize" format="dimension"/>
         <attr name="mlb_overlapCards" format="boolean"/>
         <attr name="mlb_animateCards" format="boolean"/>
