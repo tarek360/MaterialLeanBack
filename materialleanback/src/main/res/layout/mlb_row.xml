@@ -37,7 +37,7 @@
       android:paddingEnd="40dp"
       android:paddingRight="40dp"
       android:paddingLeft="0dp"
-      app:rvp_triggerOffset="0.1"
+      app:rvp_triggerOffset="0.15"
       app:rvp_singlePageFling="true"
       android:clipToPadding="false"/>
 

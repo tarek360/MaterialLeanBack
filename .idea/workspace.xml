@@ -29,11 +29,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2daafd8-a02d-4544-9365-fba0f5f9dae6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineViewHolder.java" afterPath="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineViewHolder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/materialleanback/src/main/res/layout/mlb_row.xml" afterPath="$PROJECT_DIR$/materialleanback/src/main/res/layout/mlb_row.xml" />
-    </list>
+    <list default="true" id="b2daafd8-a02d-4544-9365-fba0f5f9dae6" name="Default" comment="" />
     <ignored path="MaterialLeanBack.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -87,14 +83,14 @@
       <file leaf-file-name="LineViewHolder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineViewHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.2222223">
-              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1935#1936#0" expanded="true" />
                 <element signature="e#1964#1965#0" expanded="true" />
-                <element signature="e#3002#3312#0" expanded="true" />
-                <element signature="e#3311#3312#0" expanded="true" />
+                <element signature="e#3016#3326#0" expanded="true" />
+                <element signature="e#3325#3326#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,11 +106,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CellAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CellViewHolder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellViewHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6486486">
-              <caret line="103" column="23" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.32707354">
+              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2492,10 +2498,10 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/sample/src/main/res/layout/cell_test.xml" />
         <option value="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/MaterialLeanBack.java" />
-        <option value="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellAdapter.java" />
         <option value="$PROJECT_DIR$/sample/src/main/java/com/github/florent37/materialleanback/sample/MainActivity.java" />
         <option value="$PROJECT_DIR$/materialleanback/src/main/res/layout/mlb_row.xml" />
         <option value="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineViewHolder.java" />
+        <option value="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellAdapter.java" />
         <option value="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellViewHolder.java" />
       </list>
     </option>
@@ -3251,8 +3257,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1935#1936#0" expanded="true" />
             <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#3002#3312#0" expanded="true" />
-            <element signature="e#3311#3312#0" expanded="true" />
+            <element signature="e#3016#3326#0" expanded="true" />
+            <element signature="e#3325#3326#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3271,10 +3277,10 @@
           <caret line="57" column="74" selection-start-line="57" selection-start-column="71" selection-end-line="57" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#2615#2945#0" expanded="false" />
-            <element signature="e#2944#2945#0" expanded="false" />
-            <element signature="e#3547#3548#0" expanded="false" />
-            <element signature="e#3606#3607#0" expanded="false" />
+            <element signature="e#2817#3147#0" expanded="false" />
+            <element signature="e#3146#3147#0" expanded="false" />
+            <element signature="e#3763#3764#0" expanded="false" />
+            <element signature="e#3822#3823#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3583,20 +3589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35211268">
-          <caret line="80" column="32" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2615#2945#0" expanded="false" />
-            <element signature="e#2944#2945#0" expanded="false" />
-            <element signature="e#3547#3548#0" expanded="false" />
-            <element signature="e#3606#3607#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/materialleanback/src/main/res/layout/mlb_cell.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -3650,20 +3642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineViewHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2222223">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1935#1936#0" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#3002#3312#0" expanded="true" />
-            <element signature="e#3311#3312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3680,10 +3658,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineViewHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1935#1936#0" expanded="true" />
+            <element signature="e#1964#1965#0" expanded="true" />
+            <element signature="e#3016#3326#0" expanded="true" />
+            <element signature="e#3325#3326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellViewHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6486486">
-          <caret line="103" column="23" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.32707354">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
