@@ -32,7 +32,6 @@ dependencies {
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.github.lsjwzh.RecyclerViewPager:lib:v1.1.0'
 
-  compile 'com.github.luckyandyzhang:CleverRecyclerView:1.0.0'
 }
 
 //https://github.com/danielemaddaluno/gradle-jcenter-publish
