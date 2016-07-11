@@ -1,8 +1,10 @@
 package com.github.florent37.materialleanback.line;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -11,6 +13,8 @@ import com.github.florent37.materialleanback.MaterialLeanBackSettings;
 import com.github.florent37.materialleanback.R;
 import com.github.florent37.materialleanback.cell.CellAdapter;
 import com.github.florent37.materialleanback.cell.CellViewHolder;
+import com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager;
+import io.github.luckyandyzhang.cleverrecyclerview.CleverRecyclerView;
 
 /**
  * Created by florentchampigny on 28/08/15.
@@ -18,7 +22,7 @@ import com.github.florent37.materialleanback.cell.CellViewHolder;
 public class LineViewHolder extends RecyclerView.ViewHolder {
 
   protected final MaterialLeanBackSettings settings;
-  protected final RecyclerView recyclerView;
+  protected final RecyclerViewPager recyclerView;
   protected final MaterialLeanBack.Adapter adapter;
   protected final MaterialLeanBack.Customizer customizer;
 
@@ -38,11 +42,17 @@ public class LineViewHolder extends RecyclerView.ViewHolder {
     layout = (ViewGroup) itemView.findViewById(R.id.row_layout);
     title = (TextView) itemView.findViewById(R.id.row_title);
 
-    recyclerView = (RecyclerView) itemView.findViewById(R.id.row_recyclerView);
-    recyclerView.setLayoutManager(
-        new LinearLayoutManager(itemView.getContext(), LinearLayoutManager.HORIZONTAL, false));
+    recyclerView = (RecyclerViewPager) itemView.findViewById(R.id.row_recyclerView);
+
+
+
+     LinearLayoutManager linearLayoutManager =
+        new LinearLayoutManager(itemView.getContext(), LinearLayoutManager.HORIZONTAL, false);
+
+    recyclerView.setLayoutManager(linearLayoutManager);
     recyclerView.setHasFixedSize(true);
   }
+
 
   public RecyclerView getRecyclerView() {
     return recyclerView;
@@ -90,6 +100,12 @@ public class LineViewHolder extends RecyclerView.ViewHolder {
             }
           }
         }));
+
+
+    //recyclerView.setScrollAnimationDuration(300);
+    //recyclerView.setOrientation(RecyclerView.HORIZONTAL);
+    //recyclerView.setVisibleChildCount(1);
+
     recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
       @Override public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
         super.onScrollStateChanged(recyclerView, newState);

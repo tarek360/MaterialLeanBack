@@ -116,6 +116,7 @@ public class MaterialLeanBack extends FrameLayout {
     LineAdapter lineAdapter = new LineAdapter(settings, adapter, customizer);
     this.adapter.setLineAdapter(lineAdapter);
     recyclerView.setAdapter(lineAdapter);
+    lineAdapter.notifyDataSetChanged();
   }
 
   public static class ViewHolder {
