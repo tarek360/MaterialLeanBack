@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onBindViewHolder(TestViewHolder viewHolder, int i) {
-                viewHolder.textView.setText("test " + i);
+                viewHolder.textView.setText("cell " + i);
 
                 String url = "http://www.lorempixel.com/40" + viewHolder.row + "/40" + viewHolder.cell + "/";
                 Picasso.with(viewHolder.imageView.getContext()).load(url).into(viewHolder.imageView);

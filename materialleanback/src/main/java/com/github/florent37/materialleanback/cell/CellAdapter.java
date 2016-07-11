@@ -36,11 +36,11 @@ public class CellAdapter extends RecyclerView.Adapter {
 
     @Override
     public int getItemViewType(int position) {
-        if (position == 0)
-            return PLACEHOLDER_START;
-        else if (position == getItemCount() - 1)
-            return PLACEHOLDER_END;
-        else
+        //if (position == 0)
+        //    return PLACEHOLDER_START;
+        //else if (position == getItemCount() - 1)
+        //    return PLACEHOLDER_END;
+        //else
             return CELL;
     }
 
@@ -52,28 +52,28 @@ public class CellAdapter extends RecyclerView.Adapter {
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int type) {
         final View view;
-        switch (type) {
-            case PLACEHOLDER_START:
-                view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.mlb_placeholder, viewGroup, false);
-                return new PlaceHolderViewHolder(view, true, settings.paddingLeft);
-            case PLACEHOLDER_END:
-                view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.mlb_placeholder, viewGroup, false);
-                return new PlaceHolderViewHolder(view, true, settings.paddingRight);
-            default:
-                view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.mlb_cell, viewGroup, false);
+        //switch (type) {
+        //    case PLACEHOLDER_START:
+        //        view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.mlb_placeholder, viewGroup, false);
+        //        return new PlaceHolderViewHolder(view, true, settings.paddingLeft);
+        //    case PLACEHOLDER_END:
+        //        view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.mlb_placeholder, viewGroup, false);
+        //        return new PlaceHolderViewHolder(view, true, settings.paddingRight);
+        //    default:
+        //
+        //}
+      view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.mlb_cell, viewGroup, false);
 
-                //simulate wrap_content
-                view.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
-                    @Override
-                    public boolean onPreDraw() {
-                        if (heightCalculatedCallback != null)
-                            heightCalculatedCallback.onHeightCalculated(view.getHeight());
-                        view.getViewTreeObserver().removeOnPreDrawListener(this);
-                        return false;
-                    }
-                });
+      //simulate wrap_content
+      view.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
+        @Override
+        public boolean onPreDraw() {
+          if (heightCalculatedCallback != null)
+            heightCalculatedCallback.onHeightCalculated(view.getHeight());
+          view.getViewTreeObserver().removeOnPreDrawListener(this);
+          return false;
         }
-
+      });
         return new CellViewHolder(view, this.row, adapter, settings);
     }
 
@@ -85,7 +85,7 @@ public class CellAdapter extends RecyclerView.Adapter {
                 cellViewHolder.setEnlarged(false);
             else
                 cellViewHolder.setEnlarged(true);
-            cellViewHolder.newPosition(position-PLACEHOLDER_START_SIZE);
+            cellViewHolder.newPosition(position);
 
             cellViewHolder.onBind();
         }
@@ -93,6 +93,6 @@ public class CellAdapter extends RecyclerView.Adapter {
 
     @Override
     public int getItemCount() {
-        return this.adapter.getCellsCount(this.row)+PLACEHOLDER_START_SIZE+PLACEHOLDER_END_SIZE;
+        return this.adapter.getCellsCount(this.row);
     }
 }

@@ -1,6 +1,5 @@
 package com.github.florent37.materialleanback.line;
 
-import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,7 +13,6 @@ import com.github.florent37.materialleanback.R;
 import com.github.florent37.materialleanback.cell.CellAdapter;
 import com.github.florent37.materialleanback.cell.CellViewHolder;
 import com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager;
-import io.github.luckyandyzhang.cleverrecyclerview.CleverRecyclerView;
 
 /**
  * Created by florentchampigny on 28/08/15.
@@ -44,15 +42,12 @@ public class LineViewHolder extends RecyclerView.ViewHolder {
 
     recyclerView = (RecyclerViewPager) itemView.findViewById(R.id.row_recyclerView);
 
-
-
-     LinearLayoutManager linearLayoutManager =
+    LinearLayoutManager linearLayoutManager =
         new LinearLayoutManager(itemView.getContext(), LinearLayoutManager.HORIZONTAL, false);
 
     recyclerView.setLayoutManager(linearLayoutManager);
     recyclerView.setHasFixedSize(true);
   }
-
 
   public RecyclerView getRecyclerView() {
     return recyclerView;
@@ -93,14 +88,17 @@ public class LineViewHolder extends RecyclerView.ViewHolder {
     recyclerView.setAdapter(
         new CellAdapter(row, adapter, settings, new CellAdapter.HeightCalculatedCallback() {
           @Override public void onHeightCalculated(int height) {
+            Log.d("wewewe", "onHeightCalculated " + height);
+
             if (!wrapped) {
               recyclerView.getLayoutParams().height = height;
               recyclerView.requestLayout();
+              Log.d("wewewe", "height " + height);
+              Log.d("wewewe", "recyclerView.getLayoutParams().height " + recyclerView.getLayoutParams().height);
               wrapped = true;
             }
           }
         }));
-
 
     //recyclerView.setScrollAnimationDuration(300);
     //recyclerView.setOrientation(RecyclerView.HORIZONTAL);

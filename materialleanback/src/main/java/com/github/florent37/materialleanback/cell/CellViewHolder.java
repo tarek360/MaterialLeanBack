@@ -101,7 +101,7 @@ public class CellViewHolder extends RecyclerView.ViewHolder {
   }
 
   public void onBind() {
-    int cell = getAdapterPosition() - CellAdapter.PLACEHOLDER_START_SIZE;
+    int cell = getAdapterPosition();
     viewHolder.cell = cell;
     adapter.onBindViewHolder(viewHolder, cell);
   }
