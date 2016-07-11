@@ -10,6 +10,7 @@ import com.github.florent37.materialleanback.MaterialLeanBack;
 import com.github.florent37.materialleanback.MaterialLeanBackSettings;
 import com.github.florent37.materialleanback.PlaceHolderViewHolder;
 import com.github.florent37.materialleanback.R;
+import com.lsjwzh.widget.recyclerviewpager.LoopRecyclerViewPager;
 
 /**
  * Created by florentchampigny on 31/08/15.
@@ -25,9 +26,12 @@ public class CellAdapter extends RecyclerView.Adapter {
     final protected int row;
     final protected MaterialLeanBack.Adapter adapter;
     final protected MaterialLeanBackSettings settings;
-    protected HeightCalculatedCallback heightCalculatedCallback;
+  private final LoopRecyclerViewPager recyclerView;
+  protected HeightCalculatedCallback heightCalculatedCallback;
 
-    public CellAdapter(int row, MaterialLeanBack.Adapter adapter, MaterialLeanBackSettings settings, HeightCalculatedCallback heightCalculatedCallback) {
+    public CellAdapter(LoopRecyclerViewPager recyclerView, int row, MaterialLeanBack.Adapter adapter, MaterialLeanBackSettings settings,
+        HeightCalculatedCallback heightCalculatedCallback) {
+        this.recyclerView = recyclerView;
         this.row = row;
         this.adapter = adapter;
         this.settings = settings;
@@ -74,7 +78,7 @@ public class CellAdapter extends RecyclerView.Adapter {
           return false;
         }
       });
-        return new CellViewHolder(view, this.row, adapter, settings);
+        return new CellViewHolder(recyclerView, view, this.row, adapter, settings);
     }
 
     @Override

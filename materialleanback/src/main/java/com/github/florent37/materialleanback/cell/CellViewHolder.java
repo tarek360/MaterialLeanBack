@@ -6,6 +6,7 @@ import android.widget.FrameLayout;
 import com.github.florent37.materialleanback.MaterialLeanBack;
 import com.github.florent37.materialleanback.MaterialLeanBackSettings;
 import com.github.florent37.materialleanback.R;
+import com.lsjwzh.widget.recyclerviewpager.LoopRecyclerViewPager;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.AnimatorSet;
 import com.nineoldandroids.animation.ObjectAnimator;
@@ -19,6 +20,7 @@ public class CellViewHolder extends RecyclerView.ViewHolder {
 
   final static float scaleEnlarged = 1.2f;
   final static float scaleReduced = 1.0f;
+  private final LoopRecyclerViewPager recyclerView;
 
   protected FrameLayout cell;
   protected boolean enlarged = false;
@@ -30,9 +32,10 @@ public class CellViewHolder extends RecyclerView.ViewHolder {
 
   Animator currentAnimator;
 
-  public CellViewHolder(View itemView, int row, MaterialLeanBack.Adapter adapter,
+  public CellViewHolder(LoopRecyclerViewPager recyclerView, View itemView, int row, MaterialLeanBack.Adapter adapter,
       MaterialLeanBackSettings settings) {
     super(itemView);
+    this.recyclerView = recyclerView;
     this.row = row;
     this.adapter = adapter;
     this.settings = settings;
@@ -102,8 +105,11 @@ public class CellViewHolder extends RecyclerView.ViewHolder {
 
   public void onBind() {
     int cell = getAdapterPosition();
-    viewHolder.cell = cell;
-    adapter.onBindViewHolder(viewHolder, cell);
+
+    int actualPosition = recyclerView.transformToActualPosition(getAdapterPosition());
+
+    viewHolder.cell = actualPosition;
+    adapter.onBindViewHolder(viewHolder, actualPosition);
   }
 
   public void setEnlarged(boolean enlarged) {

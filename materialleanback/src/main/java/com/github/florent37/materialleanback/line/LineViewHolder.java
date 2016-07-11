@@ -12,7 +12,7 @@ import com.github.florent37.materialleanback.MaterialLeanBackSettings;
 import com.github.florent37.materialleanback.R;
 import com.github.florent37.materialleanback.cell.CellAdapter;
 import com.github.florent37.materialleanback.cell.CellViewHolder;
-import com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager;
+import com.lsjwzh.widget.recyclerviewpager.LoopRecyclerViewPager;
 
 /**
  * Created by florentchampigny on 28/08/15.
@@ -20,7 +20,7 @@ import com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager;
 public class LineViewHolder extends RecyclerView.ViewHolder {
 
   protected final MaterialLeanBackSettings settings;
-  protected final RecyclerViewPager recyclerView;
+  protected final LoopRecyclerViewPager recyclerView;
   protected final MaterialLeanBack.Adapter adapter;
   protected final MaterialLeanBack.Customizer customizer;
 
@@ -40,7 +40,7 @@ public class LineViewHolder extends RecyclerView.ViewHolder {
     layout = (ViewGroup) itemView.findViewById(R.id.row_layout);
     title = (TextView) itemView.findViewById(R.id.row_title);
 
-    recyclerView = (RecyclerViewPager) itemView.findViewById(R.id.row_recyclerView);
+    recyclerView = (LoopRecyclerViewPager) itemView.findViewById(R.id.row_recyclerView);
 
     LinearLayoutManager linearLayoutManager =
         new LinearLayoutManager(itemView.getContext(), LinearLayoutManager.HORIZONTAL, false);
@@ -86,23 +86,16 @@ public class LineViewHolder extends RecyclerView.ViewHolder {
     }
 
     recyclerView.setAdapter(
-        new CellAdapter(row, adapter, settings, new CellAdapter.HeightCalculatedCallback() {
+        new CellAdapter(recyclerView, row, adapter, settings, new CellAdapter.HeightCalculatedCallback() {
           @Override public void onHeightCalculated(int height) {
-            Log.d("wewewe", "onHeightCalculated " + height);
 
             if (!wrapped) {
               recyclerView.getLayoutParams().height = height;
               recyclerView.requestLayout();
-              Log.d("wewewe", "height " + height);
-              Log.d("wewewe", "recyclerView.getLayoutParams().height " + recyclerView.getLayoutParams().height);
               wrapped = true;
             }
           }
         }));
-
-    //recyclerView.setScrollAnimationDuration(300);
-    //recyclerView.setOrientation(RecyclerView.HORIZONTAL);
-    //recyclerView.setVisibleChildCount(1);
 
     recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
       @Override public void onScrollStateChanged(RecyclerView recyclerView, int newState) {

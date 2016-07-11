@@ -30,13 +30,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2daafd8-a02d-4544-9365-fba0f5f9dae6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellAdapter.java" afterPath="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellViewHolder.java" afterPath="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellViewHolder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineViewHolder.java" afterPath="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineViewHolder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/materialleanback/src/main/res/layout/mlb_row.xml" afterPath="$PROJECT_DIR$/materialleanback/src/main/res/layout/mlb_row.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/github/florent37/materialleanback/sample/MainActivity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/github/florent37/materialleanback/sample/MainActivity.java" />
     </list>
     <ignored path="MaterialLeanBack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,8 +65,8 @@
       <file leaf-file-name="MaterialLeanBack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/MaterialLeanBack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.222222">
-              <caret line="85" column="32" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="32" />
+            <state vertical-scroll-proportion="33.666668">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,63 +84,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LineViewHolder.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LineViewHolder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineViewHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7297297">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.2222223">
+              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1923#1924#0" expanded="true" />
-                <element signature="e#1952#1953#0" expanded="true" />
-                <element signature="e#2990#3525#0" expanded="true" />
-                <element signature="e#3524#3525#0" expanded="true" />
+                <element signature="e#1935#1936#0" expanded="true" />
+                <element signature="e#1964#1965#0" expanded="true" />
+                <element signature="e#3002#3312#0" expanded="true" />
+                <element signature="e#3311#3312#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CellViewHolder.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LineAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CellViewHolder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellViewHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mlb_row.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/materialleanback/src/main/res/layout/mlb_row.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.714286">
-              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cell_test.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample/src/main/res/layout/cell_test.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.142857">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/github/florent37/materialleanback/sample/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="76" column="72" selection-start-line="76" selection-start-column="72" selection-end-line="76" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.6486486">
+              <caret line="103" column="23" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2524,9 +2494,9 @@
         <option value="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/MaterialLeanBack.java" />
         <option value="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellAdapter.java" />
         <option value="$PROJECT_DIR$/sample/src/main/java/com/github/florent37/materialleanback/sample/MainActivity.java" />
-        <option value="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellViewHolder.java" />
         <option value="$PROJECT_DIR$/materialleanback/src/main/res/layout/mlb_row.xml" />
         <option value="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineViewHolder.java" />
+        <option value="$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellViewHolder.java" />
       </list>
     </option>
   </component>
@@ -3171,6 +3141,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b2daafd8-a02d-4544-9365-fba0f5f9dae6" name="Default" comment="" />
@@ -3182,7 +3155,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="810" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3204,7 +3177,7 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17381974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21959943" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -3214,6 +3187,14 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -3268,10 +3249,10 @@
           <caret line="77" column="22" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1952#1953#0" expanded="true" />
-            <element signature="e#2990#3525#0" expanded="true" />
-            <element signature="e#3524#3525#0" expanded="true" />
+            <element signature="e#1935#1936#0" expanded="true" />
+            <element signature="e#1964#1965#0" expanded="true" />
+            <element signature="e#3002#3312#0" expanded="true" />
+            <element signature="e#3311#3312#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3289,11 +3270,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="74" selection-start-line="57" selection-start-column="71" selection-end-line="57" selection-end-column="74" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2615#2945#0" expanded="true" />
-            <element signature="e#2944#2945#0" expanded="true" />
-            <element signature="e#3547#3548#0" expanded="true" />
-            <element signature="e#3606#3607#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2615#2945#0" expanded="false" />
+            <element signature="e#2944#2945#0" expanded="false" />
+            <element signature="e#3547#3548#0" expanded="false" />
+            <element signature="e#3606#3607#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3546,14 +3527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.3.0/recyclerview-v7-23.3.0-sources.jar!/android/support/v7/widget/RecyclerView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22522523">
-          <caret line="8749" column="51" selection-start-line="8749" selection-start-column="51" selection-end-line="8749" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/materialleanback/build/intermediates/exploded-aar/com.github.luckyandyzhang/CleverRecyclerView/1.0.0/jars/classes.jar!/io/github/luckyandyzhang/cleverrecyclerview/CleverRecyclerViewHelper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2058823">
@@ -3610,34 +3583,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/github/florent37/materialleanback/sample/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="72" selection-start-line="76" selection-start-column="72" selection-end-line="76" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.35211268">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2615#2945#0" expanded="false" />
+            <element signature="e#2944#2945#0" expanded="false" />
+            <element signature="e#3547#3548#0" expanded="false" />
+            <element signature="e#3606#3607#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/MaterialLeanBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.222222">
-          <caret line="85" column="32" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/res/layout/cell_test.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.142857">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3652,57 +3608,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sample/src/main/res/layout/cell_test.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14754099">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/github/florent37/materialleanback/sample/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/materialleanback/src/main/res/layout/mlb_row.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.714286">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.48360655">
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineAdapter.java">
+    <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/MaterialLeanBack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.081081">
-          <caret line="51" column="99" selection-start-line="51" selection-start-column="84" selection-end-line="51" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellViewHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35211268">
-          <caret line="80" column="32" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="32" />
+        <state vertical-scroll-proportion="33.666668">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2615#2945#0" expanded="true" />
-            <element signature="e#2944#2945#0" expanded="true" />
-            <element signature="e#3547#3548#0" expanded="true" />
-            <element signature="e#3606#3607#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineViewHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7297297">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.2222223">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1952#1953#0" expanded="true" />
-            <element signature="e#2990#3525#0" expanded="true" />
-            <element signature="e#3524#3525#0" expanded="true" />
+            <element signature="e#1935#1936#0" expanded="true" />
+            <element signature="e#1964#1965#0" expanded="true" />
+            <element signature="e#3002#3312#0" expanded="true" />
+            <element signature="e#3311#3312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/line/LineAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.3.0/recyclerview-v7-23.3.0-sources.jar!/android/support/v7/widget/RecyclerView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="9063" column="25" selection-start-line="9063" selection-start-column="25" selection-end-line="9063" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/materialleanback/src/main/java/com/github/florent37/materialleanback/cell/CellViewHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6486486">
+          <caret line="103" column="23" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
