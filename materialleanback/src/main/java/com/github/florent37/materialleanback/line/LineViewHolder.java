@@ -3,7 +3,6 @@ package com.github.florent37.materialleanback.line;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -23,6 +22,7 @@ public class LineViewHolder extends RecyclerView.ViewHolder {
   protected final LoopRecyclerViewPager recyclerView;
   protected final MaterialLeanBack.Adapter adapter;
   protected final MaterialLeanBack.Customizer customizer;
+  private final LinearLayoutManager linearLayoutManager;
 
   protected ViewGroup layout;
   protected TextView title;
@@ -42,7 +42,7 @@ public class LineViewHolder extends RecyclerView.ViewHolder {
 
     recyclerView = (LoopRecyclerViewPager) itemView.findViewById(R.id.row_recyclerView);
 
-    LinearLayoutManager linearLayoutManager =
+    linearLayoutManager =
         new LinearLayoutManager(itemView.getContext(), LinearLayoutManager.HORIZONTAL, false);
 
     recyclerView.setLayoutManager(linearLayoutManager);
@@ -51,6 +51,10 @@ public class LineViewHolder extends RecyclerView.ViewHolder {
 
   public RecyclerView getRecyclerView() {
     return recyclerView;
+  }
+
+  public RecyclerView.LayoutManager getLayoutManager() {
+    return linearLayoutManager;
   }
 
   public void onBind(int row) {
@@ -85,8 +89,8 @@ public class LineViewHolder extends RecyclerView.ViewHolder {
       }
     }
 
-    recyclerView.setAdapter(
-        new CellAdapter(recyclerView, row, adapter, settings, new CellAdapter.HeightCalculatedCallback() {
+    recyclerView.setAdapter(new CellAdapter(recyclerView, row, adapter, settings,
+        new CellAdapter.HeightCalculatedCallback() {
           @Override public void onHeightCalculated(int height) {
 
             if (!wrapped) {
